@@ -1,0 +1,77 @@
+.key {
+  border: 1px solid $color-secondary;
+  border-radius: 5px;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: $key-width-base;
+  height: 48px;
+
+  &:hover {
+    border-color: $color-secondary-light;
+    cursor: pointer;
+
+    .key__main {
+      color: $color-primary-light;
+    }
+    .key_arrow {
+      background-image: url("../../../img/arrow-ico-light.svg");
+    }
+  }
+}
+
+.key__main {
+  font-family: $font-primary;
+  font-style: normal;
+  font-weight: 400;
+  font-size: $fontsize-content-primary;
+  color: $color-primary;
+}
+
+.key_pressed {
+  box-shadow: unset;
+  background-color: $color-primary-extralight;
+}
+
+.key_text {
+  font-size: $fontsize-base;
+}
+
+.key_arrow {
+  width: 18px;
+  height: 15px;
+  background-image: url("../../../img/arrow-ico.svg");
+}
+
+.key_arrow-left {
+  transform: rotate(-90deg);
+}
+
+.key_arrow-down {
+  transform: rotate(180deg);
+}
+
+.key_arrow-right {
+  transform: rotate(90deg);
+}
+
+.key_double {
+  width: $key-width-double;
+}
+
+.key_enter {
+  width: $key-width-enter;
+}
+
+.key_tab {
+  width: $key-width-tab;
+}
+
+.key_space {
+  width: $key-width-space;
+}
+
+.key_ctrl {
+  width: $key-width-ctrl;
+}

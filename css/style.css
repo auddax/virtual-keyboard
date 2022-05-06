@@ -1,0 +1,127 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 1200px;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #343a40;
+}
+
+.key {
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+}
+.key:hover {
+  border-color: #dee2e6;
+  cursor: pointer;
+}
+.key:hover .key__main {
+  color: #6c757d;
+}
+.key:hover .key_arrow {
+  background-image: url("../../../img/arrow-ico-light.svg");
+}
+
+.key__main {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: #343a40;
+}
+
+.key_pressed {
+  box-shadow: unset;
+  background-color: #e9ecef;
+}
+
+.key_text {
+  font-size: 1rem;
+}
+
+.key_arrow {
+  width: 18px;
+  height: 15px;
+  background-image: url("../../../img/arrow-ico.svg");
+}
+
+.key_arrow-left {
+  transform: rotate(-90deg);
+}
+
+.key_arrow-down {
+  transform: rotate(180deg);
+}
+
+.key_arrow-right {
+  transform: rotate(90deg);
+}
+
+.key_double {
+  width: 118px;
+}
+
+.key_enter {
+  width: 108px;
+}
+
+.key_tab {
+  width: 58px;
+}
+
+.key_space {
+  width: 383px;
+}
+
+.key_ctrl {
+  width: 83px;
+}
+
+.keyboard {
+  width: 918px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+}
+
+.keyboard__row {
+  margin: 10px 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.keyboard__row:last-child {
+  margin-bottom: 10px;
+}
+
+.keyboard-output {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: #343a40;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  width: 918px;
+  height: 312px;
+  margin-bottom: 50px;
+}
+
+/*# sourceMappingURL=style.css.map */

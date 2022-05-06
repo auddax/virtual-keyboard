@@ -1,0 +1,12 @@
+.keyboard-output {
+  font-family: $font-primary;
+  font-style: normal;
+  font-weight: 400;
+  font-size: $fontsize-content-primary;
+  color: $color-primary;
+  border: 1px solid $color-secondary;
+  border-radius: 5px;
+  width: $keyboard-width;
+  height: 312px;
+  margin-bottom: 50px;
+}
