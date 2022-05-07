@@ -6,7 +6,12 @@
   color: $color-primary;
   border: 1px solid $color-secondary;
   border-radius: 5px;
-  width: $keyboard-width;
+  width: 908px;
   height: 312px;
   margin-bottom: 50px;
+  padding: 5px;
+
+  &:focus {
+    outline: 0 none;
+  }
 }

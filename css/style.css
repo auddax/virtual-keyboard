@@ -13,13 +13,6 @@
   justify-content: center;
 }
 
-.header {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  color: #343a40;
-}
-
 .key {
   border: 1px solid #ced4da;
   border-radius: 5px;
@@ -29,24 +22,17 @@
   align-items: center;
   width: 48px;
   height: 48px;
-}
-.key:hover {
-  border-color: #dee2e6;
-  cursor: pointer;
-}
-.key:hover .key__main {
-  color: #6c757d;
-}
-.key:hover .key_arrow {
-  background-image: url("../../../img/arrow-ico-light.svg");
-}
-
-.key__main {
+  transition: 0.25s;
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1.25rem;
   color: #343a40;
+}
+.key:hover {
+  border-color: #dee2e6;
+  color: #6c757d;
+  cursor: pointer;
 }
 
 .key_pressed {
@@ -59,21 +45,27 @@
 }
 
 .key_arrow {
-  width: 18px;
-  height: 15px;
   background-image: url("../../../img/arrow-ico.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.key_arrow:hover {
+  background-image: url("../../../img/arrow-ico-light.svg");
 }
 
 .key_arrow-left {
   transform: rotate(-90deg);
+  box-shadow: -3px 3px 6px rgba(0, 0, 0, 0.15);
 }
 
 .key_arrow-down {
   transform: rotate(180deg);
+  box-shadow: -3px -3px 6px rgba(0, 0, 0, 0.15);
 }
 
 .key_arrow-right {
   transform: rotate(90deg);
+  box-shadow: 3px -3px 6px rgba(0, 0, 0, 0.15);
 }
 
 .key_double {
@@ -119,9 +111,13 @@
   color: #343a40;
   border: 1px solid #ced4da;
   border-radius: 5px;
-  width: 918px;
+  width: 908px;
   height: 312px;
   margin-bottom: 50px;
+  padding: 5px;
+}
+.keyboard-output:focus {
+  outline: 0 none;
 }
 
 /*# sourceMappingURL=style.css.map */

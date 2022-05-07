@@ -7,26 +7,18 @@
   align-items: center;
   width: $key-width-base;
   height: 48px;
-
-  &:hover {
-    border-color: $color-secondary-light;
-    cursor: pointer;
-
-    .key__main {
-      color: $color-primary-light;
-    }
-    .key_arrow {
-      background-image: url("../../../img/arrow-ico-light.svg");
-    }
-  }
-}
-
-.key__main {
+  transition: 0.25s;
   font-family: $font-primary;
   font-style: normal;
   font-weight: 400;
   font-size: $fontsize-content-primary;
   color: $color-primary;
+
+  &:hover {
+    border-color: $color-secondary-light;
+    color: $color-primary-light;
+    cursor: pointer;
+  }
 }
 
 .key_pressed {
@@ -39,21 +31,28 @@
 }
 
 .key_arrow {
-  width: 18px;
-  height: 15px;
   background-image: url("../../../img/arrow-ico.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &:hover {
+    background-image: url("../../../img/arrow-ico-light.svg");
+  }
 }
 
 .key_arrow-left {
   transform: rotate(-90deg);
+  box-shadow: -3px 3px 6px rgba(0, 0, 0, 0.15);
 }
 
 .key_arrow-down {
   transform: rotate(180deg);
+  box-shadow: -3px -3px 6px rgba(0, 0, 0, 0.15);
 }
 
 .key_arrow-right {
   transform: rotate(90deg);
+  box-shadow: 3px -3px 6px rgba(0, 0, 0, 0.15);
 }
 
 .key_double {
