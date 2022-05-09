@@ -45,12 +45,12 @@
 }
 
 .key_arrow {
-  background-image: url("../../../img/arrow-ico.svg");
+  background-image: url("../img/arrow-ico.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
 .key_arrow:hover {
-  background-image: url("../../../img/arrow-ico-light.svg");
+  background-image: url("../img/arrow-ico-light.svg");
 }
 
 #arrowleft {
