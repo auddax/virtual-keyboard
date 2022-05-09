@@ -1,0 +1,76 @@
+.key {
+  border: 1px solid $color-secondary;
+  border-radius: 5px;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: $key-width-base;
+  height: 48px;
+  transition: 0.25s;
+  font-family: $font-primary;
+  font-style: normal;
+  font-weight: 400;
+  font-size: $fontsize-content-primary;
+  color: $color-primary;
+
+  &:hover {
+    border-color: $color-secondary-light;
+    color: $color-primary-light;
+    cursor: pointer;
+  }
+}
+
+.key_pressed {
+  box-shadow: unset;
+  background-color: $color-primary-extralight;
+}
+
+.key_text {
+  font-size: $fontsize-base;
+}
+
+.key_arrow {
+  background-image: url("../img/arrow-ico.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &:hover {
+    background-image: url("../img/arrow-ico-light.svg");
+  }
+}
+
+#arrowleft {
+  transform: rotate(-90deg);
+  box-shadow: -3px 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+#arrowdown {
+  transform: rotate(180deg);
+  box-shadow: -3px -3px 6px rgba(0, 0, 0, 0.15);
+}
+
+#arrowright {
+  transform: rotate(90deg);
+  box-shadow: 3px -3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.key_double {
+  width: $key-width-double;
+}
+
+.key_enter {
+  width: $key-width-enter;
+}
+
+.key_tab {
+  width: $key-width-tab;
+}
+
+.key_space {
+  width: $key-width-space;
+}
+
+.key_ctrl {
+  width: $key-width-ctrl;
+}

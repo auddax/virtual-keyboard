@@ -1,0 +1,15 @@
+.keyboard {
+  width: $keyboard-width;
+  border: 1px solid $color-secondary;
+  border-radius: 5px;
+}
+
+.keyboard__row {
+  margin: 10px 10px 0;
+  display: flex;
+  justify-content: space-between;
+
+  &:last-child {
+    margin-bottom: 10px;
+  }
+}
