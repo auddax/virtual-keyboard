@@ -1,0 +1,17 @@
+.keyboard-output {
+  font-family: $font-primary;
+  font-style: normal;
+  font-weight: 400;
+  font-size: $fontsize-content-primary;
+  color: $color-primary;
+  border: 1px solid $color-secondary;
+  border-radius: 5px;
+  width: 908px;
+  height: 312px;
+  margin-bottom: 20px;
+  padding: 5px;
+
+  &:focus {
+    outline: 0 none;
+  }
+}
